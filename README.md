@@ -19,15 +19,15 @@ This pipeline performs the alignment of sequencing reads (after light pre-proces
 - The number of cores is not specified (for samtools and so on), but should be included for scaling up.
 - Structure of the folders and required files to run the wrapper:
 .
-├── your_input_folder
-│ ├── *.R1.paired.fq.gz
-│ └── *.R1.paired.fq.gz
-├── annotation
-│ ├── MN908947.3.fasta
-├── adapters
-│ ├── NexteraPE.fa
-└── bin
-│ ├── code_challenge.sh
+ * [your_input_folder](./your_input_folder)
+   * [*.R1.paired.fq.gz](./your_input_folder/*.R1.paired.fq.gz)
+   * [*.R1.paired.fq.gz](./your_input_folder/*.R1.paired.fq.gz)
+ * [annotation](./annotation)
+   * [MN908947.3.fasta](./annotation/MN908947.3.fasta)
+ * [adapters](./adapters)
+   * [NexteraPE.fa](./adapters/NexteraPE.fa)
+ * [bin](./bin)
+   * [code_challenge.sh](./bin/code_challenge.sh)
 
 
 ## Results and interpretations
