@@ -145,7 +145,7 @@ th a:active, th a:hover {
 	</tr>
 	<tr bgcolor=dddddd> 
 		<td valign=top> <b> Date </b> </td>
-		<td> 2024-03-17 15:54 </td>
+		<td> 2024-03-18 14:48 </td>
 	</tr>
 	<tr bgcolor=ffffff> 
 		<td valign=top> <b> SnpEff version </b> </td>
@@ -153,8 +153,9 @@ th a:active, th a:hover {
 	</tr>
 	<tr bgcolor=dddddd> 
 		<td valign=top> <b> Command line arguments </b> </td>
-		<td> <pre>SnpEff  -stats vcf_results/sample.html NC_045512.2 
-vcf_results/var_filtered.vcf </pre> </td>
+		<td> <pre>SnpEff  -stats vcf_results/sample/sample.html 
+NC_045512.2 vcf_results/sample/var_filtered.vcf 
+</pre> </td>
 	</tr>
 	<tr bgcolor=ffffff> 
 		<td valign=top> <b> Warnings </b> </td>
@@ -515,16 +516,16 @@ Missense / Silent ratio: 1.8077
 <p>
 <pre>
 	<table class="histo">
-		<tr> <th width=15%>Min</th><td>370</td> </tr>
-		<tr> <th>Max</th><td>2,673</td> </tr>
-		<tr> <th>Mean</th><td>1,248.625</td> </tr>
-		<tr> <th>Median</th><td>1,096</td> </tr>
-		<tr> <th>Standard deviation</th><td>603.782</td> </tr>
-		<tr> <th>Values</th><td>370,380,432,492,564,575,641,652,740,753,827,905,908,909,959,966,981,989,993,1094,1098,1188,1275,1310,1345,1422,1453,1519,1589,1654,1689,1747,1977,2005,2026,2119,2159,2217,2350,2673</td> </tr>
-		<tr> <th>Count</th><td>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</td> </tr>
+		<tr> <th width=15%>Min</th><td>348</td> </tr>
+		<tr> <th>Max</th><td>4,430</td> </tr>
+		<tr> <th>Mean</th><td>1,443.925</td> </tr>
+		<tr> <th>Median</th><td>1,281</td> </tr>
+		<tr> <th>Standard deviation</th><td>858.41</td> </tr>
+		<tr> <th>Values</th><td>348,506,588,633,639,642,749,777,821,848,862,872,907,939,940,941,962,1221,1230,1281,1370,1446,1484,1527,1535,1574,1583,1629,1752,1777,1827,1902,1997,2369,2544,2552,2682,3790,4430</td> </tr>
+		<tr> <th>Count</th><td>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</td> </tr>
 		</tr>
 	</table>
-	<img src="http://chart.apis.google.com/chart?cht=bvg&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Quality+histogram&chxr=0,0.0,1.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Count|2:|370||||||||||827||||||||||1098||||||||||1689|||||||||2673|3:|Quality&chd=e:................................................................................"><br>
+	<img src="http://chart.apis.google.com/chart?cht=bvg&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Quality+histogram&chxr=0,1.0,2.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Count|2:|348||||||||||862||||||||||1370||||||||||1827||||||||4430|3:|Quality&chd=e:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"><br>
 </pre>
 
 <!--==========================================================================
@@ -587,18 +588,18 @@ Missense / Silent ratio: 1.8077
 
 <center>
 <table border=1>
-	<tr> <th> Transitions </th><td class="numeric"> 47 </td> </tr>
-	<tr> <th> Transversions </th><td class="numeric"> 24 </td> </tr>
-	<tr> <th> Ts/Tv ratio </th><td class="numeric"> 1.9583 </td> </tr>
+	<tr> <th> Transitions </th><td class="numeric"> 49 </td> </tr>
+	<tr> <th> Transversions </th><td class="numeric"> 26 </td> </tr>
+	<tr> <th> Ts/Tv ratio </th><td class="numeric"> 1.8846 </td> </tr>
 </table>
 </center>
 <p>
 
 	<b>All variants:</b>
 	<pre>Sample ,unknown,Total
-Transitions ,47,47
-Transversions ,24,24
-Ts/Tv ,1,958,1,958
+Transitions ,49,49
+Transversions ,26,26
+Ts/Tv ,1,885,1,885
 </pre>
 	<p>
 	<b>Only known variants</b> (i.e. the ones having a non-empty ID field):
@@ -613,15 +614,15 @@ Ts/Tv ,1,958,1,958
 <a name="alleleFreq">
 <center> <b> Allele frequency </b> <p> </center>
 
-	<img src="http://chart.apis.google.com/chart?cht=bvg&chbh=8,4,2&chd=e:AA..&chs=800x300&chxt=y,y,x,x&chg=5.0,3.0,3,2&chxp=1,50.0|3,50.0&chtt=Allele+Frequency+%25&chxr=0,3.0,37.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Count|2:|50|100|3:|Alleles+frequency"><br>
+	<img src="http://chart.apis.google.com/chart?cht=bvg&chbh=8,4,2&chd=e:AA..&chs=800x300&chxt=y,y,x,x&chg=5.0,3.0,3,2&chxp=1,50.0|3,50.0&chtt=Allele+Frequency+%25&chxr=0,1.0,39.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Count|2:|50|100|3:|Alleles+frequency"><br>
 	<table class="histo">
 		<tr> <th width=15%>Min</th><td>50</td> </tr>
 		<tr> <th>Max</th><td>100</td> </tr>
-		<tr> <th>Mean</th><td>96.25</td> </tr>
+		<tr> <th>Mean</th><td>98.75</td> </tr>
 		<tr> <th>Median</th><td>100</td> </tr>
-		<tr> <th>Standard deviation</th><td>13.337</td> </tr>
+		<tr> <th>Standard deviation</th><td>7.906</td> </tr>
 		<tr> <th>Values</th><td>50,100</td> </tr>
-		<tr> <th>Count</th><td>3,37</td> </tr>
+		<tr> <th>Count</th><td>1,39</td> </tr>
 		</tr>
 	</table>
 <p>
@@ -633,15 +634,15 @@ Ts/Tv ,1,958,1,958
 <hr> 
 <a name="alleleCount">
 <center> <b> Allele Count </b> <p> </center>
-	<img src="http://chart.apis.google.com/chart?cht=bvg&chbh=8,4,2&chd=e:AA..&chs=800x300&chxt=y,y,x,x&chtt=Allele+Count&chxp=1,50.0|3,50.0&chxl=1:|Count|2:|1|2|3:|Allele+Count&chxr=0,3.0,37.0|1,0.0,100.0|3,0.0,100.0"><br>
+	<img src="http://chart.apis.google.com/chart?cht=bvg&chbh=8,4,2&chd=e:AA..&chs=800x300&chxt=y,y,x,x&chtt=Allele+Count&chxp=1,50.0|3,50.0&chxl=1:|Count|2:|1|2|3:|Allele+Count&chxr=0,1.0,39.0|1,0.0,100.0|3,0.0,100.0"><br>
 	<table class="histo">
 		<tr> <th width=15%>Min</th><td>1</td> </tr>
 		<tr> <th>Max</th><td>2</td> </tr>
-		<tr> <th>Mean</th><td>1.925</td> </tr>
+		<tr> <th>Mean</th><td>1.975</td> </tr>
 		<tr> <th>Median</th><td>2</td> </tr>
-		<tr> <th>Standard deviation</th><td>0.267</td> </tr>
+		<tr> <th>Standard deviation</th><td>0.158</td> </tr>
 		<tr> <th>Values</th><td>1,2</td> </tr>
-		<tr> <th>Count</th><td>3,37</td> </tr>
+		<tr> <th>Count</th><td>1,39</td> </tr>
 		</tr>
 	</table>
 <p>
@@ -654,14 +655,14 @@ Ts/Tv ,1,958,1,958
 <hr> 
 <a name="homHet">
 <center> <b> Hom/Het per sample </b> <p> </center>
-	<img src="http://chart.apis.google.com/chart?cht=bvg&chd=e:..&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Heterozygous+genotypes&chxr=0,0.0,3.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Heterozygous+count|2:|0|3:|Sample+number"><br>
-	<img src="http://chart.apis.google.com/chart?cht=bvg&chd=e:..&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Homozygous+%28ALT%29+genotypes&chxr=0,0.0,37.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Homozygous+count|2:|0|3:|Sample+number"><br>
+	<img src="http://chart.apis.google.com/chart?cht=bvg&chd=e:..&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Heterozygous+genotypes&chxr=0,0.0,1.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Heterozygous+count|2:|0|3:|Sample+number"><br>
+	<img src="http://chart.apis.google.com/chart?cht=bvg&chd=e:..&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Homozygous+%28ALT%29+genotypes&chxr=0,0.0,39.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Homozygous+count|2:|0|3:|Sample+number"><br>
 	<img src="http://chart.apis.google.com/chart?cht=bvg&chd=e:AA&chbh=8,4,2&chs=800x300&chxt=y,y,x,x&chxp=1,50.0|3,50.0&chtt=Missing+genotypes&chxr=0,0.0,0.0|1,0.0,100.0|3,0.0,100.0&chxl=1:|Missing+count|2:|0|3:|Sample+number"><br>
 	
 	<pre>Sample_names , unknown
 Reference , 0
-Het , 3
-Hom , 37
+Het , 1
+Hom , 39
 Missing , 0
 </pre>
 <p>

@@ -24,7 +24,7 @@
 [M::mem_pestat] skip orientation FF
 [M::mem_pestat] skip orientation RF
 [M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 30584 reads in 0.658 CPU sec, 0.677 real sec
+[M::mem_process_seqs] Processed 30584 reads in 0.673 CPU sec, 0.735 real sec
 [main] Version: 0.7.17-r1188
-[main] CMD: bwa mem -M annotation/MN908947.3.fasta trimming/sample.R1.trimmed.fq.gz trimming/sample.R2.trimmed.fq.gz
-[main] Real time: 0.781 sec; CPU: 0.743 sec
+[main] CMD: bwa mem -M annotation/MN908947.3.fasta trimming/sample_R1.trimmed.fq.gz trimming/sample_R2.trimmed.fq.gz
+[main] Real time: 0.849 sec; CPU: 0.763 sec
