@@ -137,7 +137,7 @@ for sample_name in "${sample_names[@]}"; do
     fi
 
     # Calling variants without any filter criteria (will do filtering on vcf file)
-    # Compress vcf file since they are usually heavy
+    # It is better to compress vcf file since they are usually heavy
     mkdir -p "vcf_results/$sample_name"
     freebayes -f "annotation/${REFERENCE}.fasta" "alignment/$sample_name/${sample_name}_rmdup.bam" > "vcf_results/$sample_name/var.vcf"
     if [ $? -ne 0 ]; then
@@ -146,8 +146,7 @@ for sample_name in "${sample_names[@]}"; do
     fi
 
     # Filtering variants (QUAL and DP for specific sample; we have only one)
-    bcftools=../software/bcftools/bcftools
-    $bcftools filter -o "vcf_results/$sample_name/var_filtered.vcf" -i 'QUAL>20 && FORMAT/DP[0]>10' "vcf_results/$sample_name/var.vcf"
+    bcftools filter -o "vcf_results/$sample_name/var_filtered.vcf" -i 'QUAL>20 && FORMAT/DP[0]>10' "vcf_results/$sample_name/var.vcf"
     if [ $? -ne 0 ]; then
         echo "Error: Failed to filter variants for sample $sample_name."
         exit 1
