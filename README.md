@@ -31,7 +31,7 @@ This pipeline performs the alignment of sequencing reads (after light pre-proces
 
  ```bash
   bin/code_challenge.sh your_input_folder
-
+ ```
 
 ## Results and interpretations
 
