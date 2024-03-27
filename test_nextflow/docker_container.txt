@@ -1,0 +1,31 @@
+# Use a base image with necessary tools installed
+FROM ubuntu:latest
+
+# Install required tools
+RUN apt-get update && \
+    apt-get install -y \
+    bwa \
+    samtools \
+    trimmomatic \
+    freebayes \
+    picard \
+    bcftools \
+    snpEff \
+    perl
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the Bash script into the container
+COPY your_script.sh /app/your_script.sh
+
+# Make the script executable
+RUN chmod +x /app/your_script.sh
+
+# Define the entry point for running the script
+ENTRYPOINT ["/app/your_script.sh"]
+
+
+docker build -t my-bash-script .
+docker run -v /path/to/input:/input my-bash-script /input
+
